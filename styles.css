@@ -11,10 +11,130 @@
   --light-gray: #d6d6d6;
   --green: #18a87c;
   --light-green: #18a97d;
+  --extra-light-green: #f4fafa;
 }
 
 /* font-family: 'Manrope', sans-serif;
 font-family: 'Maven Pro', sans-serif; */
+/* customer review styles */
+
+.customer-review-details {
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.customer-rating-start {
+  width: 11rem;
+  border-radius: 1.25rem;
+  background-color: var(--extra-light-green);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-top: 1rem;
+}
+.rating-start {
+  margin: 0 7px;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+.rating-start:first-child {
+  margin: 0;
+}
+.rating-start:last-child {
+  margin: 0;
+}
+.review-rating {
+  font-family: "Maven Pro", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: var(--black);
+  padding-left: 1.875rem;
+}
+.total-max-review {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: var(--gray);
+  padding-top: 0.3125rem;
+  margin: 0;
+}
+
+.review-rating-max {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: var(--gray);
+  margin-left: 0.25rem;
+}
+.review-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.0625rem solid var(--light-gray);
+}
+.review-title {
+  font-family: "Maven Pro", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: var(--black);
+  margin: 0;
+}
+.review-button {
+  background: var(--green);
+  border-radius: 0.25rem;
+  font-family: "Maven Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  border: transparent;
+  width: 9.75rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+/* customer total review */
+.customer-total-review {
+  width: 16.5rem;
+  padding: 1rem 1rem;
+  border: 0.0625rem solid var(--light-gray);
+  border-radius: 0.625rem;
+  margin-right: 24px;
+}
+.total-review {
+  font-family: "Maven Pro", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: var(--black);
+  margin: 0;
+}
 .review-form-wrapper {
   background-color: var(--white);
   border-radius: 1em;
@@ -68,7 +188,106 @@ font-family: 'Maven Pro', sans-serif; */
   top: 0;
 }
 .review-rating {
-  margin-top: 1.5em;
+  margin: auto;
+  margin-top: 0.625rem;
+}
+
+/* customer-total-review-progress */
+
+.customer-total-review-progress {
+  width: 16.5rem;
+  padding: 1rem 1rem;
+  border: 0.0625rem solid var(--light-gray);
+  border-radius: 0.625rem;
+  margin-right: 24px;
+}
+.customer-total-review-progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+.customer-total-review-progress-info:first-child {
+  margin-top: 0;
+}
+.progress-review-total {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--black);
+  margin: 0;
+}
+#ProgressBar {
+  background-color: var(--light-gray);
+  height: 5px;
+  width: 174px;
+  border-radius: 100px;
+}
+#bar {
+  background-color: var(--green);
+  height: 5px;
+  border-radius: 100px;
+  width: 50%;
+}
+#progress-percentage {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.005em;
+  color: var(--gray);
+  margin: 0;
+}
+
+/* .total review star */
+.total-review-star-desc {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.total-review-star {
+  margin-right: 24px;
+  width: auto;
+  padding: 1rem 1rem;
+  border: 0.0625rem solid var(--light-gray);
+  border-radius: 0.625rem;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+.star {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.star-title {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: var(--gray);
+  margin: 0;
+  padding-top: 7px;
+}
+
+.total-rating-start {
+}
+.total-rating-start {
+  margin: 0 7px;
+  width: 13.33px;
+  height: 13.33px;
+  object-fit: cover;
+}
+.total-rating-start:first-child {
+  margin-left: 0;
+}
+.total-rating-start:last-child {
+  margin-right: 0;
 }
 /* rating start */
 
@@ -82,7 +301,7 @@ font-family: 'Maven Pro', sans-serif; */
 }
 .review-rate:not(:checked) > label {
   float: right;
-  width: 41px;
+  width: 30px;
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
