@@ -24,6 +24,14 @@ font-family: 'Maven Pro', sans-serif; */
   text-align: center;
   margin-top: 1.5rem;
 }
+@media screen and (max-width: 767px) {
+  .customer-review-details {
+    flex-direction: column;
+  }
+  .customer-total-review-progress {
+    margin: 24px 0;
+  }
+}
 
 .customer-rating-start {
   width: 11rem;
