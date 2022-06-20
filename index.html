@@ -402,7 +402,7 @@
             formData.append("email", email.value)
             formData.append("title", title.value)
             formData.append("feedback", feedback.value)
-            formData.append("annonymous", isAnnonymous.checked)
+            formData.append("anonymous", isAnnonymous.checked)
             Array.from(files).forEach((image_file) => {
                 formData.append('files[]', image_file);
             });
