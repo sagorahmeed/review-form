@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>review form</title>
     <link rel="stylesheet" href="./styles.css">
+
 </head>
 
 <body>
@@ -41,7 +42,7 @@
                         <div id="ProgressBar" className="" style="">
                             <div className="" id="bar"></div>
                         </div>
-                    </div>+
+                    </div>
 
                     <p id="progress-percentage">(50%)</p>
                 </div>
@@ -112,62 +113,45 @@
 
                 <div class="total-review-star">
                     <div class="star">
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
+                        <img class="total-rating-start" src="./public/star-svg/success-star.svg"
                             alt="review customer rating" />
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
+                        <img class="total-rating-start" src="./public/star-svg/success-star.svg"
                             alt="review customer rating" /><img class="total-rating-start"
-                            src="./public/star-svg/Group.svg" alt="review customer rating" />
+                            src="./public/star-svg/success-star.svg" alt="review customer rating" />
 
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
-                            alt="review customer rating" /><img class="total-rating-start"
-                            src="./public/star-svg/Group.svg" alt="review customer rating" />
+                        <img class="total-rating-start" src="./public/star-svg/success-star.svg"
+                            alt="review customer rating" />
                     </div>
-                    <h1 class="star-title">(840)</h1>
+                    <h1 class="star-title">(240)</h1>
                 </div>
 
                 <div class="total-review-star">
                     <div class="star">
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
+                        <img class="total-rating-start" src="./public/star-svg/light-danger.svg"
                             alt="review customer rating" />
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
+                        <img class="total-rating-start" src="./public/star-svg/light-danger.svg"
                             alt="review customer rating" /><img class="total-rating-start"
-                            src="./public/star-svg/Group.svg" alt="review customer rating" />
-
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
-                            alt="review customer rating" /><img class="total-rating-start"
-                            src="./public/star-svg/Group.svg" alt="review customer rating" />
+                            src="./public/star-svg/light-danger.svg" alt="review customer rating" />
                     </div>
-                    <h1 class="star-title">(840)</h1>
+                    <h1 class="star-title">(60)</h1>
                 </div>
 
                 <div class="total-review-star">
                     <div class="star">
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
+                        <img class="total-rating-start" src="./public/star-svg/warning-star.svg"
                             alt="review customer rating" />
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
-                            alt="review customer rating" /><img class="total-rating-start"
-                            src="./public/star-svg/Group.svg" alt="review customer rating" />
-
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
-                            alt="review customer rating" /><img class="total-rating-start"
-                            src="./public/star-svg/Group.svg" alt="review customer rating" />
+                        <img class="total-rating-start" src="./public/star-svg/warning-star.svg"
+                            alt="review customer rating" />
                     </div>
-                    <h1 class="star-title">(840)</h1>
+                    <h1 class="star-title">(24)</h1>
                 </div>
 
                 <div class="total-review-star">
                     <div class="star">
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
+                        <img class="total-rating-start" src="./public/star-svg/danger-star.svg"
                             alt="review customer rating" />
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
-                            alt="review customer rating" /><img class="total-rating-start"
-                            src="./public/star-svg/Group.svg" alt="review customer rating" />
-
-                        <img class="total-rating-start" src="./public/star-svg/Group.svg"
-                            alt="review customer rating" /><img class="total-rating-start"
-                            src="./public/star-svg/Group.svg" alt="review customer rating" />
                     </div>
-                    <h1 class="star-title">(840)</h1>
+                    <h1 class="star-title">(36)</h1>
                 </div>
             </div>
             <!-- total review star desc end-->
@@ -250,6 +234,16 @@
         </div>
     </div>
 
+    <div class="reviews-review-wrapper">
+        <div>
+            <img class="product-review-owner" src="./public/widget/reviews-review-owner.png"
+                alt="review product feedback">
+        </div>
+        <div>
+
+        </div>
+    </div>
+
     <script>
         const form = document.querySelector('form')
         form.addEventListener('submit', e => {
@@ -264,6 +258,7 @@
             console.log({ name: name.value, email: email.value, title: title.value, feedback: feedback.value, file: uploadedFile, product_id: {{ product.id }}})
    
         })
+        // console.log(form);
     </script>
 </body>
 
